@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réserver un taxi - Mwinda</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/logo.jpg" alt="Logo Mwinda" height="48">
+            <span class="brand">Mwinda</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../pages/reservation.html">Réserver</a></li>
+                <li><a href="../pages/about.html">À propos</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="reservation-form">
+            <h2>Réserver un taxi</h2>
+            <form id="formReservation">
+                <label>Nom & Prénom
+                    <input type="text" name="nom" required>
+                </label>
+                <label>Téléphone
+                    <input type="tel" name="telephone" required>
+                </label>
+                <label>Point de départ
+                    <input type="text" name="depart" required>
+                </label>
+                <label>Destination
+                    <input type="text" name="destination" required>
+                </label>
+                <label>Type de transport
+                    <select name="type" required>
+                        <option value="Voiture">Voiture</option>
+                        <option value="Moto">Moto</option>
+                    </select>
+                </label>
+                <button type="submit">Envoyer</button>
+            </form>
+            <div id="confirmation" style="display:none;"></div>
+        </section>
+    </main>
+    <footer id="contact">
+        <p>Contact : contact@mwinda.com | +243 000 000 000</p>
+        <p>&copy; 2025 Mwinda</p>
+    </footer>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
